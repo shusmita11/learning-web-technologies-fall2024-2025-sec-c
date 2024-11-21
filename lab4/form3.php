@@ -1,20 +1,20 @@
 <html>
 <head>
-    <title>Date of Birth Form</title>
+    <title>Form 3</title>
 </head>
 <body>
-    <form method="post" action="">
+    <form action="" method="POST">
         <fieldset>
             <legend><b>Date of Birth</b></legend>
 
             <label for="day">dd</label>
-            <input type="number" name="day" min="1" max="31" required />
+            <input type="number" name="day" required />
 
             <label for="month">mm</label>
-            <input type="number" name="month" min="1" max="12" required />
+            <input type="number" name="month" required />
 
             <label for="year">yyyy</label>
-            <input type="number" name="year" min="1900" max="2100" required />
+            <input type="number" name="year" required />
             <hr>
             <input type="submit" name="submit" value="Submit">
         </fieldset>    
@@ -31,29 +31,29 @@
         {
             if (!($day >= 1 && $day <= 31))
             {
-                echo "Day must be between 1-31";
+                echo "Day must be between 1 to 31<br>";
             }
             
-            else if (!($month >= 1 && $month <= 12))
+            if (!($month >= 1 && $month <= 12))
 
             {
-                echo "Month must be between 1-12";
+                echo "Month must be between 1  to 12<br>";
             }
             
-            else if (!($year >= 1953 && $year <= 1998))
+            if (!($year >= 1953 && $year <= 1998))
             {
-                echo "Year must be between 1953 and 1998";
+                echo "Year must be between 1953 to 1998<br>";
             }
             
             else
             {
-                echo "DOB is valid.";
+                echo "valid date of birth";
             }
         }
         
         else
         {
-            echo "Please fill all the information";
+            echo "select the date of birth";
         }
     }
     ?>

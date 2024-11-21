@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Degree Selection</title>
+    <title>Form 5</title>
 </head>
 <body>
     <form action="" method="POST">
