@@ -15,7 +15,7 @@
                 <h1>Welcome to Home</h1>
                 <?php
                     //session_start();
-                    echo $_SESSION['user_info']['user'];
+                    //echo $_SESSION['user_info']['user'];
 
                     foreach($_SESSION['user_info'] as $user)
                     {
