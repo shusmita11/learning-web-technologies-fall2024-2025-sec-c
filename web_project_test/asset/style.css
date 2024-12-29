@@ -1,0 +1,19 @@
+
+.c0 {
+  height: 40px;
+  background-color:aqua;
+  text-align: center;
+  font-size: 32px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.c1 {
+  position: relative;
+  width: 470px;
+  border: 2px solid #000;
+  padding: 15px;
+  display: flex;
+  gap: 5px;
+}
+

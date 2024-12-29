@@ -1,0 +1,90 @@
+<?php
+$doctorFieldsVisible = false;
+$patientFieldsVisible = false;
+
+
+<html>
+    <head>
+        <title>SignUp</title>
+        <link rel="stylesheet" href="../asset/styles.css">
+    </head>
+
+    <body>
+        <form action="" method="POST">
+            <div class="c0">Sign Up</div>
+            <div class="c1">
+                <div class="form">
+                    <label align="left">First Name: </label>
+                    <input type="text" name="first_name" value=""><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Last Name: </label>
+                    <input type="text" name="last_name" value=""><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Email: </label>
+                    <input type="text" name="email" value=""><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Contact No.: </label>
+                    <input type="text" name="phone" value=""><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">NID: </label>
+                    <input type="text" name="nid" value=""><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Password: </label>
+                    <input type="text" name="password" value=""><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Confirm Password: </label>
+                    <input type="text" name="confirm_password" value=""><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Date of Birth: </label>
+                    <input type="date" name="dob"><br>
+                </div>
+
+                <div class="form">
+                    <label align="right">Gender: </label>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Other"> Other<br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Address: </label>
+                    <textarea name="address" rows="4" cols="50" placeholder=""></textarea><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Medical History: </label>
+                    <textarea name="med_history" rows="4" cols="50" placeholder=""></textarea><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Emergency Contact: </label>
+                    <input type="text" name="emergency_contact" value=""><br>
+                </div>
+
+                <div class="form">
+                    <input type="submit" name="submit" value="Submit">
+                </div>
+
+                <div class="login-link">
+                Already have an account? <a href="../view/login.php">Login</a>
+                </div>
+
+            </div>
+
+        </form>
+    </body>
+</html>
