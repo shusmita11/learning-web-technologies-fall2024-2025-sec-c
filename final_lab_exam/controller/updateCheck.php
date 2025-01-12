@@ -23,7 +23,6 @@ require_once('../model/updateModel.php');
         {
             echo 'invalid';
         }
-
     }
     
     else

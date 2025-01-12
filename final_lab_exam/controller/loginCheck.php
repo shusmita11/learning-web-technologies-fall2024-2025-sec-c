@@ -20,7 +20,6 @@ require_once('../model/loginModel.php');
         {
             echo 'invalid';
         }
-
     }
     
     else

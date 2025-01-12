@@ -33,7 +33,7 @@ function confirmUp()
         return;
     }
 
-    const regData = JSON.stringify({
+    const updateData = JSON.stringify({
         empName: empName,
         comName: comName,
         phone: phone,
@@ -48,7 +48,7 @@ function confirmUp()
     xhttp.open("POST", "../controller/updateCheck.php", true);
     console.log('flag 1');
     xhttp.setRequestHeader("Content-type", "application/json");
-    xhttp.send(regData);
+    xhttp.send(updateData);
 
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200){

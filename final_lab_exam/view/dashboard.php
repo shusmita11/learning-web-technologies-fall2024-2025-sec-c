@@ -31,6 +31,7 @@ $users = getUser();
                 <?php if (!empty($users)): ?>
                     <?php foreach ($users as $user): ?>
                         <tr>
+                            <?php $_SESSION['del_user'] = $user['user_name']?>
                             <td><?= $user['emp_name']; ?></td>
                             <td><?= $user['com_name']; ?></td>
                             <td><?= $user['contact_no']; ?></td>
@@ -38,7 +39,6 @@ $users = getUser();
                             <td><?= $user['password']; ?></td>
                             <td><input type="button" name="update" value="update" id="update" onclick="confirmUpdate()"></td>
                             <td><input type="button" name="delete" value="delete" id="delete" onclick="confirmDelete()"></td>
-                            
                             <script src='../asset/updateAndDelete.js'></script>
                         </tr>
                     <?php endforeach; ?>

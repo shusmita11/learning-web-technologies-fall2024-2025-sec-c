@@ -23,7 +23,6 @@ require_once('../model/regModel.php');
         {
             echo 'invalid';
         }
-
     }
     
     else
