@@ -17,6 +17,8 @@ $users = getUser();
     </head>
 
     <body>
+    <input type="text" name="search" value="">
+    <input type="button" name="search_submit" value="Search"><br>
     <table border="1" cellspacing="0">
                 <tr>
                     <th>Employee Name</th>
