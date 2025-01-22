@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>SignUp</title>
+        <link rel="stylesheet" href="../asset/CSS/registrationStyle.css">
+    </head>
+
+    <body>
+        <form id="signupForm"> 
+            <div class="c0">Sign Up</div>
+            <div class="c1">
+                <div class="form">
+                    <label align="left">First Name: </label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Enter your first name"><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Last Name: </label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Enter your last name"><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Email: </label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email"><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Contact No.: </label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter your contact no."><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">NID: </label>
+                    <input type="text" name="nid" id="nid" placeholder="Enter your NID"><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Enter password (must be 8 characters with one special character)"><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Confirm Password: </label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Re-enter password"><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Date of Birth: </label>
+                    <input type="date" name="dob" id="dob" placeholder="Enter your date of birth"><br>
+                </div>
+
+                <div class="form">
+                    <label align="right">Gender: </label>
+                    <input type="radio" name="gender" value="Male" id="genderMale"> Male
+                    <input type="radio" name="gender" value="Female" id="genderFemale"> Female
+                    <input type="radio" name="gender" value="Other" id="genderOther"> Other<br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Address: </label>
+                    <textarea name="address" id="address" rows="4" cols="50" placeholder="Enter your address"></textarea><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Medical History: </label>
+                    <textarea name="medHistory" id="medHistory" rows="4" cols="50" placeholder="Enter your medical history (if any)"></textarea><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Emergency Contact: </label>
+                    <input type="text" name="emergencyContact" id="emergencyContact" placeholder="Enter emergency contact no."><br>
+                </div>
+
+                <div class="form">
+                    <input type="button" name="click" value ="Sign Up" onclick="checkReg()">
+                </div>
+
+                <div class="login-link">
+                    Already have an account? <a href="../view/login.html">Login</a>
+                </div>
+            </div>
+        </form>
+        <script src="../asset/JS/regCheck.js"></script>
+    </body>
+</html>

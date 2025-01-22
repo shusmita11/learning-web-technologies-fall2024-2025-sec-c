@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="../asset/CSS/style_login.css">
+    </head>
+    <body>
+
+        <div class="main">
+            <nav style="color: white;">
+                <span><img src="../asset/images/logo.svg" alt=""></span>
+                <div>
+                    <a href="index.html"><button class="btn ">home</button></a>
+                    <!-- <button class="btn "></button>
+                    <button class="btn "></button> -->
+                    <a href="faq.html"><button class="btn ">faq</button></a>
+                    <a href="registration.html"><button class="btn rounded-btn">register</button></a>
+                </div>
+            </nav>
+    
+    
+            <div class="hero">
+    
+                <span>Log In!</span>
+    
+                <!-- <div>
+                    <button class="btn rounded-btn transparent-btn">Book Appointment</button>
+                </div> -->
+            </div>
+        </div>
+
+
+        <div class="login-container">
+            <!-- <div class="login">Login</div> -->
+            <form action="../controller/loginCheck.php" method="post" autocomplete="off" class="loginForm">
+                <input type="text" style="display:none">
+                <div class="form inputfield">
+                    <input type="text" name="email" id="email" placeholder="Enter your email" autocomplete="off"> 
+                </div>
+                <div class="form inputfield">
+                    <input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="off"> <br>
+                </div>
+
+                <div class="form">
+                    <select name="userType" class="selectBox"> 
+                        <option value="" disabled selected>Select user type</option>
+                        <option value="patient">Patient</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="admin">Admin</option>
+                    </select><br>
+                </div>
+                <div>
+                    <input type="button" class="rounded-btn btn" name="login" value="Login" onclick="confirmLogin()">
+                </div>
+            </form>
+
+            <div class="signup-link">
+                Don't have an account? <a href="../view/registration.html">Sign Up</a>
+            </div>
+
+            <div class="signup-link">
+                Forgot Password? <a href="../view/forgetPassword.html">Click Here</a>
+            </div>
+        </div>
+
+        <script src="../asset/JS/loginCheck.js"></script>
+    </body>
+</html>

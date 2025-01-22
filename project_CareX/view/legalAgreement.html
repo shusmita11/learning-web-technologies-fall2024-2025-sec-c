@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="../asset/CSS/legalAgreementStyle.css">
+        
+    </head>
+    <body>
+        <div class="legal-agree-main">
+            <div class="legal-agree"><b>Terms of Service</b></div>
+            <form action="../controller/legalAgreementCheck.php" method="post">
+                <div class="terms">
+                    <label for="userAgreement"><b>User Agreement</b></label>
+                </div>
+
+                <div class="terms">
+                    <p>By using this platform, you agree to book appointments responsibly, providing accurate and up-to-date personal information. It is important to comply with the cancellation policies set by the service providers. While CareX prioritizes the security of your data, we are not liable for breaches caused by third parties. Continued use of the platform indicates acceptance of these terms and any future modifications. For further details, please review our privacy policy.</p>
+                </div>
+
+                <div class="terms-buttons">
+                    <input type="button" name="agree" value="Agree" id="agreeButton" onclick="agreeClick()">
+                    <input type="button" name="cancel" value="Cancel" id="cancelButton" onclick="cancelClick()">
+                </div>
+            </form>
+
+            <div class="policy">
+                To view privacy policy <a href="viewPrivacyPolicy.html">Click here</a>
+            </div>
+        </div>
+        
+        <script src="../asset/JS/legalAgreementCheck.js"></script>
+    </body>
+</html>

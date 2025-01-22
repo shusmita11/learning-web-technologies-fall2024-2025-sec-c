@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif; 
+}
+
+body{
+    background-color: #FFF7F4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    /* background-image: url(images/download.png); */
+    background-size: 2200px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 50vh;
+    background-color: #07332F;
+    position: relative;
+    color: white;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    width: 150px;
+}
+
+/* Hero Section */
+.hero {
+    margin: 0;
+    padding: 20px 0;
+    height: calc(50vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+}
+
+.hero > :nth-child(1) {
+    font-size: 50px;
+    color: #F7A582;
+    padding-bottom: 30px;
+}
+
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer; 
+    border-radius: 50px;
+    border: none; 
+}
+
+/* Normal buttons */
+.btn {
+    background: none;
+    color: white;
+}
+
+/* Hover effect for normal buttons */
+.btn:hover {
+    color: #FFA500; 
+    background: none; 
+}
+
+/* Rounded buttons */
+.rounded-btn {
+    background-color: #F7A582;
+    color: #07332F;
+}
+
+/* Hover effect for rounded buttons */
+.rounded-btn:hover {
+    background-color: white;
+    color: mediumseagreen;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.transparent-btn {
+    background: none;
+    color: #F7A582;
+    border: 1px solid #F7A582;
+}
+
+.transparent-btn:hover {
+    background-color: rgba(50, 205, 50, 0.8); 
+    color: white;
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.login-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email, #password{
+    background-color: transparent;
+    width: 300px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.selectBox{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    margin: 5px;
+}
+
