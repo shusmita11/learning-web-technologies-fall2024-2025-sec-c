@@ -1,0 +1,224 @@
+/* Global Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif; 
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main Section */
+.main {
+    background-image: url(images/download.png);
+    background-size: 2200px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 100vh;
+    background-color: #07332F;
+    position: relative;
+    color: white;
+}
+
+/* Navigation */
+nav {
+    max-width: 80vw;
+    margin: auto;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    width: 150px;
+}
+
+/* Hero Section */
+.hero {
+    margin: 0;
+    padding: 20px 0;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+}
+
+.hero > :nth-child(1) {
+    font-size: 30px;
+}
+
+.hero > :nth-child(2) {
+    font-size: 50px;
+    color: #F7A582;
+    padding-bottom: 30px;
+}
+
+.hero > :nth-child(3) {
+    font-size: 18px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer; /* Hand cursor for all buttons */
+    border-radius: 50px;
+    border: none; /* Remove border */
+}
+
+/* Normal buttons */
+.btn {
+    background: none;
+    color: white;
+}
+
+.btn:hover {
+    color: #FFA500; 
+    background: none; 
+}
+
+/* Rounded buttons */
+.rounded-btn {
+    background-color: #F7A582;
+    color: #07332F;
+}
+
+/* Hover effect for rounded buttons */
+.rounded-btn:hover {
+    background-color: white;
+    color: mediumseagreen;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Transparent button (Hero Section) */
+.transparent-btn {
+    background: none;
+    color: #F7A582;
+    border: 1px solid #F7A582;
+}
+
+/* Hover effect for transparent button */
+.transparent-btn:hover {
+    background-color: rgba(50, 205, 50, 0.8); /* Green tint */
+    color: white;
+    transform: scale(1.05); /* Slightly enlarge */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+
+/* FAQ Section */
+.faq {
+    background-color: #FFF7F4;
+    padding: 40px 20px;
+    color: #07332F;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 30px;
+    color: #F7A582;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #07332F;
+}
+
+.faq-item .question {
+    font-size: 20px;
+    font-weight: bold;
+    color: #07332F;
+}
+
+.faq-item .answer {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+
+
+/* footer section */
+footer{
+    background-color: #07332F;
+    
+    padding: 70px 0px;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.container{
+    margin: auto;
+    max-width: 80vw;
+    /* background-color: #FFA500; */
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #F7A582;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+
+}
+
+.footer-col h4 img{
+    height: 50px;
+    /* background-color: white; */
+}
+
+.footer-col ul li{
+    margin-bottom: 10px;
+    color: #FFF7F4;
+}
+
+.footer-col ul li a{
+    font-size: 14px;
+    color: #FFF7F4;
+    display: block;
+}
+
+.footer-col ul .description{
+    font-size: 12px;
+}
+
+.footer-col .social-icons a {
+    margin-right: 30px;
+    /* background-color: white; */
+    color: #F7A582;
+    font-size: 24px; /* Base icon size */
+    transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease; /* Smooth transition */
+}
+
+.footer-col .social-icons a:hover {
+    color: #FFA500;
+    transform: scale(1.5); /* Scale the icon */
+    font-size: 36px; /* Increase font size when hovered */
+}
+
